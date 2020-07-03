@@ -1,0 +1,1 @@
+docker run -d -p 5672:5672 -p 15672:15672 -v `pwd`/data:/var/lib/rabbitmq --hostname lookrabbit -e RABBITMQ_DEFAULT_VHOST=my_vhost  -e RABBITMQ_DEFAULT_USER=admin -e RABBITMQ_DEFAULT_PASS=lookrbmqdev rabbitmq:3.8-rc-management
